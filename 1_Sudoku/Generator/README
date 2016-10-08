@@ -1,0 +1,127 @@
+./generator -g -sv -e "valid&rating>8000" -n100 -f%v -o test.dat
+
+-g generate
+
+-S# puzzle simmetry, # is one of the following:
+	f 	full dihedral
+	r 	full rotational (90 180 270 degrees)
+	hv 	horizontal and vertical
+	da 	diagonal and antidiagonal
+	p 	pi rotational (180 degrees)
+	v 	vertical
+	h 	horizontal
+	d 	diagonal (main)
+	a 	antidiagonal
+
+-e use an expression, mostly the following
+	valid	create a valid sudoku
+	rating	create sudokus with predefined rating (1-9999)
+
+-n# create # sudokus
+
+-f%v remove not useful data from the output, such as rating, seed etc.
+
+-o specify output file
+
+
+Easy sudokus
+./generator -g      -e "valid&rating<2000" -n500 -f%v -o Easy/easy.dat &
+./generator -g -sh  -e "valid&rating<2000" -n500 -f%v -o Easy/easy_h.dat &
+./generator -g -sv  -e "valid&rating<2000" -n500 -f%v -o Easy/easy_v.dat &
+./generator -g -shv -e "valid&rating<2000" -n500 -f%v -o Easy/easy_hv.dat &
+./generator -g -sp  -e "valid&rating<2000" -n500 -f%v -o Easy/easy_p.dat &
+./generator -g -sd  -e "valid&rating<2000" -n500 -f%v -o Easy/easy_d.dat &
+./generator -g -sa  -e "valid&rating<2000" -n500 -f%v -o Easy/easy_a.dat &
+./generator -g -sda -e "valid&rating<2000" -n500 -f%v -o Easy/easy_da.dat &
+
+Medium sudokus
+./generator -g      -e "valid&rating>2000&&rating<4000" -n500 -f%v -o Medium/medium.dat &
+./generator -g -sh  -e "valid&rating>2000&&rating<4000" -n500 -f%v -o Medium/medium_h.dat &
+./generator -g -sv  -e "valid&rating>2000&&rating<4000" -n500 -f%v -o Medium/medium_v.dat &
+./generator -g -shv -e "valid&rating>2000&&rating<4000" -n500 -f%v -o Medium/medium_hv.dat &
+./generator -g -sp  -e "valid&rating>200&&rating<4000" -n500 -f%v -o Medium/medium_p.dat &
+./generator -g -sd  -e "valid&rating>2000&&rating<4000" -n500 -f%v -o Medium/medium_d.dat &
+./generator -g -sa  -e "valid&rating>2000&&rating<4000" -n500 -f%v -o Medium/medium_a.dat &
+./generator -g -sda -e "valid&rating>2000&&rating<4000" -n500 -f%v -o Medium/medium_da.dat &
+
+Hard sudokus
+./generator -g      -e "valid&rating>4000&&rating<6000" -n500 -f%v -o Hard/hard.dat &
+./generator -g -sh  -e "valid&rating>4000&&rating<6000" -n500 -f%v -o Hard/hard_h.dat &
+./generator -g -sv  -e "valid&rating>4000&&rating<6000" -n500 -f%v -o Hard/hard_v.dat &
+./generator -g -shv -e "valid&rating>4000&&rating<6000" -n500 -f%v -o Hard/hard_hv.dat &
+./generator -g -sp  -e "valid&rating>4000&&rating<6000" -n500 -f%v -o Hard/hard_p.dat &
+./generator -g -sd  -e "valid&rating>4000&&rating<6000" -n500 -f%v -o Hard/hard_d.dat &
+./generator -g -sa  -e "valid&rating>4000&&rating<6000" -n500 -f%v -o Hard/hard_a.dat &
+./generator -g -sda -e "valid&rating>4000&&rating<6000" -n500 -f%v -o Hard/hard_da.dat &
+
+Very hard sudokus
+./generator -g      -e "valid&rating>6000&&rating<8000" -n500 -f%v -o VeryHard/veryHard.dat &
+./generator -g -sh  -e "valid&rating>6000&&rating<8000" -n500 -f%v -o VeryHard/veryHard_h.dat &
+./generator -g -sv  -e "valid&rating>6000&&rating<8000" -n500 -f%v -o VeryHard/veryHard_v.dat &
+./generator -g -shv -e "valid&rating>6000&&rating<8000" -n500 -f%v -o VeryHard/veryHard_hv.dat &
+./generator -g -sp  -e "valid&rating>6000&&rating<8000" -n500 -f%v -o VeryHard/veryHard_p.dat &
+./generator -g -sd  -e "valid&rating>6000&&rating<8000" -n500 -f%v -o VeryHard/veryHard_d.dat &
+./generator -g -sa  -e "valid&rating>6000&&rating<8000" -n500 -f%v -o VeryHard/veryHard_a.dat &
+./generator -g -sda -e "valid&rating>6000&&rating<8000" -n500 -f%v -o VeryHard/veryHard_da.dat &
+
+Extreme sudokus
+./generator -g      -e "valid&rating>8000" -n500 -f%v -o Extreme/extreme.dat &
+./generator -g -sh  -e "valid&rating>8000" -n500 -f%v -o Extreme/extreme_h.dat &
+./generator -g -sv  -e "valid&rating>8000" -n500 -f%v -o Extreme/extreme_v.dat &
+./generator -g -shv -e "valid&rating>8000" -n500 -f%v -o Extreme/extreme_hv.dat &
+./generator -g -sp  -e "valid&rating>8000" -n500 -f%v -o Extreme/extreme_p.dat &
+./generator -g -sd  -e "valid&rating>8000" -n500 -f%v -o Extreme/extreme_d.dat &
+./generator -g -sa  -e "valid&rating>8000" -n500 -f%v -o Extreme/extreme_a.dat &
+./generator -g -sda -e "valid&rating>8000" -n500 -f%v -o Extreme/extreme_da.dat &
+
+
+
+
+./generator -g      -e "valid&rating<2000" -n50 -f%v -o test_easy/easy.dat &
+./generator -g -sh  -e "valid&rating<2000" -n50 -f%v -o test_easy/easy_h.dat &
+./generator -g -sv  -e "valid&rating<2000" -n50 -f%v -o test_easy/easy_v.dat &
+./generator -g -shv -e "valid&rating<2000" -n50 -f%v -o test_easy/easy_hv.dat &
+./generator -g -sp  -e "valid&rating<2000" -n50 -f%v -o test_easy/easy_p.dat &
+./generator -g -sd  -e "valid&rating<2000" -n50 -f%v -o test_easy/easy_d.dat &
+./generator -g -sa  -e "valid&rating<2000" -n50 -f%v -o test_easy/easy_a.dat &
+./generator -g -sda -e "valid&rating<2000" -n50 -f%v -o test_easy/easy_da.dat &
+
+Medium sudokus
+./generator -g      -e "valid&rating>2000&&rating<4000" -n50 -f%v -o test_Medium/medium.dat &
+./generator -g -sh  -e "valid&rating>2000&&rating<4000" -n50 -f%v -o test_Medium/medium_h.dat &
+./generator -g -sv  -e "valid&rating>2000&&rating<4000" -n50 -f%v -o test_Medium/medium_v.dat &
+./generator -g -shv -e "valid&rating>2000&&rating<4000" -n50 -f%v -o test_Medium/medium_hv.dat &
+./generator -g -sp  -e "valid&rating>200&&rating<4000" -n50 -f%v -o test_Medium/medium_p.dat &
+./generator -g -sd  -e "valid&rating>2000&&rating<4000" -n50 -f%v -o test_Medium/medium_d.dat &
+./generator -g -sa  -e "valid&rating>2000&&rating<4000" -n50 -f%v -o test_Medium/medium_a.dat &
+./generator -g -sda -e "valid&rating>2000&&rating<4000" -n50 -f%v -o test_Medium/medium_da.dat &
+
+Hard sudokus
+./generator -g      -e "valid&rating>4000&&rating<6000" -n50 -f%v -o test_hard/hard.dat &
+./generator -g -sh  -e "valid&rating>4000&&rating<6000" -n50 -f%v -o test_hard/hard_h.dat &
+./generator -g -sv  -e "valid&rating>4000&&rating<6000" -n50 -f%v -o test_hard/hard_v.dat &
+./generator -g -shv -e "valid&rating>4000&&rating<6000" -n50 -f%v -o test_hard/hard_hv.dat &
+./generator -g -sp  -e "valid&rating>4000&&rating<6000" -n50 -f%v -o test_hard/hard_p.dat &
+./generator -g -sd  -e "valid&rating>4000&&rating<6000" -n50 -f%v -o test_hard/hard_d.dat &
+./generator -g -sa  -e "valid&rating>4000&&rating<6000" -n50 -f%v -o test_hard/hard_a.dat &
+./generator -g -sda -e "valid&rating>4000&&rating<6000" -n50 -f%v -o test_hard/hard_da.dat &
+
+Very hard sudokus
+./generator -g      -e "valid&rating>6000&&rating<8000" -n50 -f%v -o test_veryHard/veryHard.dat &
+./generator -g -sh  -e "valid&rating>6000&&rating<8000" -n50 -f%v -o test_veryHard/veryHard_h.dat &
+./generator -g -sv  -e "valid&rating>6000&&rating<8000" -n50 -f%v -o test_veryHard/veryHard_v.dat &
+./generator -g -shv -e "valid&rating>6000&&rating<8000" -n50 -f%v -o test_veryHard/veryHard_hv.dat &
+./generator -g -sp  -e "valid&rating>6000&&rating<8000" -n50 -f%v -o test_veryHard/veryHard_p.dat &
+./generator -g -sd  -e "valid&rating>6000&&rating<8000" -n50 -f%v -o test_veryHard/veryHard_d.dat &
+./generator -g -sa  -e "valid&rating>6000&&rating<8000" -n50 -f%v -o test_veryHard/veryHard_a.dat &
+./generator -g -sda -e "valid&rating>6000&&rating<8000" -n50 -f%v -o test_veryHard/veryHard_da.dat &
+
+Extreme sudokus
+./generator -g      -e "valid&rating>8000" -n50 -f%v -o test_extreme/extreme.dat &
+./generator -g -sh  -e "valid&rating>8000" -n50 -f%v -o test_extreme/extreme_h.dat &
+./generator -g -sv  -e "valid&rating>8000" -n50 -f%v -o test_extreme/extreme_v.dat &
+./generator -g -shv -e "valid&rating>8000" -n50 -f%v -o test_extreme/extreme_hv.dat &
+./generator -g -sp  -e "valid&rating>8000" -n50 -f%v -o test_extreme/extreme_p.dat &
+./generator -g -sd  -e "valid&rating>8000" -n50 -f%v -o test_extreme/extreme_d.dat &
+./generator -g -sa  -e "valid&rating>8000" -n50 -f%v -o test_extreme/extreme_a.dat &
+./generator -g -sda -e "valid&rating>8000" -n50 -f%v -o test_extreme/extreme_da.dat &
