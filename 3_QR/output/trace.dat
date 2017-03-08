@@ -1,0 +1,644 @@
+Transition 1->1
+	No changes
+
+Transition 1->2
+	Der of I: Point to interval update (zero,pos)
+
+Transition 2->5
+	Val of I: Point to interval update (0,+)
+
+Transition 2->8
+	Val of I: Point to interval update (0,+)
+	Der of O: Point to interval update (zero,pos)
+	Der of V: Point to interval update (zero,pos)
+	Der of H: Point to interval update (zero,pos)
+	Der of P: Point to interval update (zero,pos)
+
+Transition 8->10
+	Val of O: Point to interval update (0,+)
+	Val of V: Point to interval update (0,+)
+	Val of H: Point to interval update (0,+)
+	Val of P: Point to interval update (0,+)
+
+Transition 9->11
+	Val of O: Point to interval update (0,+)
+	Val of V: Point to interval update (0,+)
+	Val of H: Point to interval update (0,+)
+	Val of P: Point to interval update (0,+)
+
+Transition 10->12
+	Val of I: Interval to point update (+,max)
+	Val of O: Interval to point update (+,max)
+	Val of V: Interval to point update (+,max)
+	Val of H: Interval to point update (+,max)
+	Val of P: Interval to point update (+,max)
+	Der of I: Interval to point update (pos,zero)
+	Der of O: Interval to point update (pos,zero)
+	Der of V: Interval to point update (pos,zero)
+	Der of H: Interval to point update (pos,zero)
+	Der of P: Interval to point update (pos,zero)
+
+Transition 10->13
+	Val of I: Interval to point update (+,max)
+	Der of I: Interval to point update (pos,zero)
+
+Transition 10->14
+	Val of O: Interval to point update (+,max)
+	Val of V: Interval to point update (+,max)
+	Val of H: Interval to point update (+,max)
+	Val of P: Interval to point update (+,max)
+	Der of O: Interval to point update (pos,zero)
+	Der of V: Interval to point update (pos,zero)
+	Der of H: Interval to point update (pos,zero)
+	Der of P: Interval to point update (pos,zero)
+
+Transition 10->15
+	Der of O: Interval to point update (pos,zero)
+	Der of V: Interval to point update (pos,zero)
+	Der of H: Interval to point update (pos,zero)
+	Der of P: Interval to point update (pos,zero)
+
+Transition 10->16
+	Der of I: Interval to point update (pos,zero)
+	Der of O: Interval to point update (pos,zero)
+	Der of V: Interval to point update (pos,zero)
+	Der of H: Interval to point update (pos,zero)
+	Der of P: Interval to point update (pos,zero)
+
+Transition 10->10
+	No changes
+
+Transition 10->11
+	Der of I: Interval to point update (pos,zero)
+
+Transition 10->19
+	Val of O: Interval to point update (+,max)
+	Val of V: Interval to point update (+,max)
+	Val of H: Interval to point update (+,max)
+	Val of P: Interval to point update (+,max)
+	Der of I: Interval to point update (pos,zero)
+	Der of O: Interval to point update (pos,zero)
+	Der of V: Interval to point update (pos,zero)
+	Der of H: Interval to point update (pos,zero)
+	Der of P: Interval to point update (pos,zero)
+
+Transition 11->11
+	No changes
+
+Transition 11->16
+	Der of O: Interval to point update (pos,zero)
+	Der of V: Interval to point update (pos,zero)
+	Der of H: Interval to point update (pos,zero)
+	Der of P: Interval to point update (pos,zero)
+
+Transition 11->19
+	Val of O: Interval to point update (+,max)
+	Val of V: Interval to point update (+,max)
+	Val of H: Interval to point update (+,max)
+	Val of P: Interval to point update (+,max)
+	Der of O: Interval to point update (pos,zero)
+	Der of V: Interval to point update (pos,zero)
+	Der of H: Interval to point update (pos,zero)
+	Der of P: Interval to point update (pos,zero)
+
+Transition 12->12
+	No changes
+
+Transition 12->17
+	Der of I: Point to interval update (zero,neg)
+
+Transition 13->12
+	Val of O: Interval to point update (+,max)
+	Val of V: Interval to point update (+,max)
+	Val of H: Interval to point update (+,max)
+	Val of P: Interval to point update (+,max)
+	Der of O: Interval to point update (pos,zero)
+	Der of V: Interval to point update (pos,zero)
+	Der of H: Interval to point update (pos,zero)
+	Der of P: Interval to point update (pos,zero)
+
+Transition 13->20
+	Der of O: Interval to point update (pos,zero)
+	Der of V: Interval to point update (pos,zero)
+	Der of H: Interval to point update (pos,zero)
+	Der of P: Interval to point update (pos,zero)
+
+Transition 13->13
+	No changes
+
+Transition 13->18
+	Der of I: Point to interval update (zero,neg)
+
+Transition 14->12
+	Val of I: Interval to point update (+,max)
+	Der of I: Interval to point update (pos,zero)
+
+Transition 14->19
+	Der of I: Interval to point update (pos,zero)
+
+Transition 15->20
+	Val of I: Interval to point update (+,max)
+	Der of I: Interval to point update (pos,zero)
+
+Transition 15->16
+	Der of I: Interval to point update (pos,zero)
+
+Transition 16->16
+	No changes
+
+Transition 17->22
+	Val of I: Point to interval update (max,+)
+	Der of O: Point to interval update (zero,neg)
+	Der of V: Point to interval update (zero,neg)
+	Der of H: Point to interval update (zero,neg)
+	Der of P: Point to interval update (zero,neg)
+
+Transition 17->23
+	Val of I: Point to interval update (max,+)
+
+Transition 18->25
+	Val of I: Point to interval update (max,+)
+
+Transition 19->19
+	No changes
+
+Transition 20->20
+	No changes
+
+Transition 20->21
+	Der of I: Point to interval update (zero,neg)
+
+Transition 21->26
+	Val of I: Point to interval update (max,+)
+
+Transition 21->27
+	Val of I: Point to interval update (max,+)
+	Der of O: Point to interval update (zero,neg)
+	Der of V: Point to interval update (zero,neg)
+	Der of H: Point to interval update (zero,neg)
+	Der of P: Point to interval update (zero,neg)
+
+Transition 21->25
+	Val of I: Point to interval update (max,+)
+	Der of O: Point to interval update (zero,pos)
+	Der of V: Point to interval update (zero,pos)
+	Der of H: Point to interval update (zero,pos)
+	Der of P: Point to interval update (zero,pos)
+
+Transition 22->27
+	Val of O: Point to interval update (max,+)
+	Val of V: Point to interval update (max,+)
+	Val of H: Point to interval update (max,+)
+	Val of P: Point to interval update (max,+)
+
+Transition 23->19
+	Der of I: Interval to point update (neg,zero)
+
+Transition 23->29
+	Val of I: Interval to point update (+,0)
+	Der of I: Interval to point update (neg,zero)
+
+Transition 24->28
+	Val of O: Point to interval update (max,+)
+	Val of V: Point to interval update (max,+)
+	Val of H: Point to interval update (max,+)
+	Val of P: Point to interval update (max,+)
+
+Transition 25->11
+	Der of I: Interval to point update (neg,zero)
+
+Transition 25->33
+	Val of I: Interval to point update (+,0)
+	Der of I: Interval to point update (neg,zero)
+
+Transition 25->29
+	Val of I: Interval to point update (+,0)
+	Val of O: Interval to point update (+,max)
+	Val of V: Interval to point update (+,max)
+	Val of H: Interval to point update (+,max)
+	Val of P: Interval to point update (+,max)
+	Der of I: Interval to point update (neg,zero)
+	Der of O: Interval to point update (pos,zero)
+	Der of V: Interval to point update (pos,zero)
+	Der of H: Interval to point update (pos,zero)
+	Der of P: Interval to point update (pos,zero)
+
+Transition 25->23
+	Val of O: Interval to point update (+,max)
+	Val of V: Interval to point update (+,max)
+	Val of H: Interval to point update (+,max)
+	Val of P: Interval to point update (+,max)
+	Der of O: Interval to point update (pos,zero)
+	Der of V: Interval to point update (pos,zero)
+	Der of H: Interval to point update (pos,zero)
+	Der of P: Interval to point update (pos,zero)
+
+Transition 25->16
+	Der of I: Interval to point update (neg,zero)
+	Der of O: Interval to point update (pos,zero)
+	Der of V: Interval to point update (pos,zero)
+	Der of H: Interval to point update (pos,zero)
+	Der of P: Interval to point update (pos,zero)
+
+Transition 25->26
+	Der of O: Interval to point update (pos,zero)
+	Der of V: Interval to point update (pos,zero)
+	Der of H: Interval to point update (pos,zero)
+	Der of P: Interval to point update (pos,zero)
+
+Transition 25->25
+	No changes
+
+Transition 25->19
+	Val of O: Interval to point update (+,max)
+	Val of V: Interval to point update (+,max)
+	Val of H: Interval to point update (+,max)
+	Val of P: Interval to point update (+,max)
+	Der of I: Interval to point update (neg,zero)
+	Der of O: Interval to point update (pos,zero)
+	Der of V: Interval to point update (pos,zero)
+	Der of H: Interval to point update (pos,zero)
+	Der of P: Interval to point update (pos,zero)
+
+Transition 26->35
+	Val of I: Interval to point update (+,0)
+	Der of I: Interval to point update (neg,zero)
+
+Transition 26->16
+	Der of I: Interval to point update (neg,zero)
+
+Transition 27->28
+	Der of I: Interval to point update (neg,zero)
+
+Transition 27->16
+	Der of I: Interval to point update (neg,zero)
+	Der of O: Interval to point update (neg,zero)
+	Der of V: Interval to point update (neg,zero)
+	Der of H: Interval to point update (neg,zero)
+	Der of P: Interval to point update (neg,zero)
+
+Transition 27->36
+	Val of I: Interval to point update (+,0)
+	Der of I: Interval to point update (neg,zero)
+
+Transition 27->1
+	Val of I: Interval to point update (+,0)
+	Val of O: Interval to point update (+,0)
+	Val of V: Interval to point update (+,0)
+	Val of H: Interval to point update (+,0)
+	Val of P: Interval to point update (+,0)
+	Der of I: Interval to point update (neg,zero)
+	Der of O: Interval to point update (neg,zero)
+	Der of V: Interval to point update (neg,zero)
+	Der of H: Interval to point update (neg,zero)
+	Der of P: Interval to point update (neg,zero)
+
+Transition 27->27
+	No changes
+
+Transition 27->3
+	Val of O: Interval to point update (+,0)
+	Val of V: Interval to point update (+,0)
+	Val of H: Interval to point update (+,0)
+	Val of P: Interval to point update (+,0)
+	Der of O: Interval to point update (neg,zero)
+	Der of V: Interval to point update (neg,zero)
+	Der of H: Interval to point update (neg,zero)
+	Der of P: Interval to point update (neg,zero)
+
+Transition 27->26
+	Der of O: Interval to point update (neg,zero)
+	Der of V: Interval to point update (neg,zero)
+	Der of H: Interval to point update (neg,zero)
+	Der of P: Interval to point update (neg,zero)
+
+Transition 27->4
+	Val of O: Interval to point update (+,0)
+	Val of V: Interval to point update (+,0)
+	Val of H: Interval to point update (+,0)
+	Val of P: Interval to point update (+,0)
+	Der of I: Interval to point update (neg,zero)
+	Der of O: Interval to point update (neg,zero)
+	Der of V: Interval to point update (neg,zero)
+	Der of H: Interval to point update (neg,zero)
+	Der of P: Interval to point update (neg,zero)
+
+Transition 28->28
+	No changes
+
+Transition 28->4
+	Val of O: Interval to point update (+,0)
+	Val of V: Interval to point update (+,0)
+	Val of H: Interval to point update (+,0)
+	Val of P: Interval to point update (+,0)
+	Der of O: Interval to point update (neg,zero)
+	Der of V: Interval to point update (neg,zero)
+	Der of H: Interval to point update (neg,zero)
+	Der of P: Interval to point update (neg,zero)
+
+Transition 28->16
+	Der of O: Interval to point update (neg,zero)
+	Der of V: Interval to point update (neg,zero)
+	Der of H: Interval to point update (neg,zero)
+	Der of P: Interval to point update (neg,zero)
+
+Transition 29->29
+	No changes
+
+Transition 29->30
+	Der of O: Point to interval update (zero,neg)
+	Der of V: Point to interval update (zero,neg)
+	Der of H: Point to interval update (zero,neg)
+	Der of P: Point to interval update (zero,neg)
+
+Transition 29->31
+	Der of I: Point to interval update (zero,pos)
+
+Transition 29->32
+	Der of I: Point to interval update (zero,pos)
+	Der of O: Point to interval update (zero,neg)
+	Der of V: Point to interval update (zero,neg)
+	Der of H: Point to interval update (zero,neg)
+	Der of P: Point to interval update (zero,neg)
+
+Transition 30->36
+	Val of O: Point to interval update (max,+)
+	Val of V: Point to interval update (max,+)
+	Val of H: Point to interval update (max,+)
+	Val of P: Point to interval update (max,+)
+
+Transition 30->38
+	Val of O: Point to interval update (max,+)
+	Val of V: Point to interval update (max,+)
+	Val of H: Point to interval update (max,+)
+	Val of P: Point to interval update (max,+)
+	Der of I: Point to interval update (zero,pos)
+
+Transition 31->40
+	Val of I: Point to interval update (0,+)
+	Der of O: Point to interval update (zero,neg)
+	Der of V: Point to interval update (zero,neg)
+	Der of H: Point to interval update (zero,neg)
+	Der of P: Point to interval update (zero,neg)
+
+Transition 31->14
+	Val of I: Point to interval update (0,+)
+
+Transition 32->41
+	Val of I: Point to interval update (0,+)
+	Val of O: Point to interval update (max,+)
+	Val of V: Point to interval update (max,+)
+	Val of H: Point to interval update (max,+)
+	Val of P: Point to interval update (max,+)
+
+Transition 33->29
+	Val of O: Interval to point update (+,max)
+	Val of V: Interval to point update (+,max)
+	Val of H: Interval to point update (+,max)
+	Val of P: Interval to point update (+,max)
+	Der of O: Interval to point update (pos,zero)
+	Der of V: Interval to point update (pos,zero)
+	Der of H: Interval to point update (pos,zero)
+	Der of P: Interval to point update (pos,zero)
+
+Transition 33->35
+	Der of O: Interval to point update (pos,zero)
+	Der of V: Interval to point update (pos,zero)
+	Der of H: Interval to point update (pos,zero)
+	Der of P: Interval to point update (pos,zero)
+
+Transition 33->33
+	No changes
+
+Transition 33->34
+	Der of I: Point to interval update (zero,pos)
+
+Transition 34->10
+	Val of I: Point to interval update (0,+)
+
+Transition 35->36
+	Der of O: Point to interval update (zero,neg)
+	Der of V: Point to interval update (zero,neg)
+	Der of H: Point to interval update (zero,neg)
+	Der of P: Point to interval update (zero,neg)
+
+Transition 35->35
+	No changes
+
+Transition 35->38
+	Der of I: Point to interval update (zero,pos)
+	Der of O: Point to interval update (zero,neg)
+	Der of V: Point to interval update (zero,neg)
+	Der of H: Point to interval update (zero,neg)
+	Der of P: Point to interval update (zero,neg)
+
+Transition 35->37
+	Der of I: Point to interval update (zero,pos)
+
+Transition 36->36
+	No changes
+
+Transition 36->1
+	Val of O: Interval to point update (+,0)
+	Val of V: Interval to point update (+,0)
+	Val of H: Interval to point update (+,0)
+	Val of P: Interval to point update (+,0)
+	Der of O: Interval to point update (neg,zero)
+	Der of V: Interval to point update (neg,zero)
+	Der of H: Interval to point update (neg,zero)
+	Der of P: Interval to point update (neg,zero)
+
+Transition 36->35
+	Der of O: Interval to point update (neg,zero)
+	Der of V: Interval to point update (neg,zero)
+	Der of H: Interval to point update (neg,zero)
+	Der of P: Interval to point update (neg,zero)
+
+Transition 36->38
+	Der of I: Point to interval update (zero,pos)
+
+Transition 37->41
+	Val of I: Point to interval update (0,+)
+	Der of O: Point to interval update (zero,neg)
+	Der of V: Point to interval update (zero,neg)
+	Der of H: Point to interval update (zero,neg)
+	Der of P: Point to interval update (zero,neg)
+
+Transition 37->15
+	Val of I: Point to interval update (0,+)
+
+Transition 37->10
+	Val of I: Point to interval update (0,+)
+	Der of O: Point to interval update (zero,pos)
+	Der of V: Point to interval update (zero,pos)
+	Der of H: Point to interval update (zero,pos)
+	Der of P: Point to interval update (zero,pos)
+
+Transition 38->41
+	Val of I: Point to interval update (0,+)
+
+Transition 39->25
+	Val of O: Point to interval update (0,+)
+	Val of V: Point to interval update (0,+)
+	Val of H: Point to interval update (0,+)
+	Val of P: Point to interval update (0,+)
+
+Transition 40->41
+	Val of O: Point to interval update (max,+)
+	Val of V: Point to interval update (max,+)
+	Val of H: Point to interval update (max,+)
+	Val of P: Point to interval update (max,+)
+
+Transition 41->41
+	No changes
+
+Transition 41->42
+	Val of I: Interval to point update (+,max)
+	Der of I: Interval to point update (pos,zero)
+
+Transition 41->7
+	Val of I: Interval to point update (+,max)
+	Val of O: Interval to point update (+,0)
+	Val of V: Interval to point update (+,0)
+	Val of H: Interval to point update (+,0)
+	Val of P: Interval to point update (+,0)
+	Der of I: Interval to point update (pos,zero)
+	Der of O: Interval to point update (neg,zero)
+	Der of V: Interval to point update (neg,zero)
+	Der of H: Interval to point update (neg,zero)
+	Der of P: Interval to point update (neg,zero)
+
+Transition 41->28
+	Der of I: Interval to point update (pos,zero)
+
+Transition 41->16
+	Der of I: Interval to point update (pos,zero)
+	Der of O: Interval to point update (neg,zero)
+	Der of V: Interval to point update (neg,zero)
+	Der of H: Interval to point update (neg,zero)
+	Der of P: Interval to point update (neg,zero)
+
+Transition 41->5
+	Val of O: Interval to point update (+,0)
+	Val of V: Interval to point update (+,0)
+	Val of H: Interval to point update (+,0)
+	Val of P: Interval to point update (+,0)
+	Der of O: Interval to point update (neg,zero)
+	Der of V: Interval to point update (neg,zero)
+	Der of H: Interval to point update (neg,zero)
+	Der of P: Interval to point update (neg,zero)
+
+Transition 41->15
+	Der of O: Interval to point update (neg,zero)
+	Der of V: Interval to point update (neg,zero)
+	Der of H: Interval to point update (neg,zero)
+	Der of P: Interval to point update (neg,zero)
+
+Transition 41->4
+	Val of O: Interval to point update (+,0)
+	Val of V: Interval to point update (+,0)
+	Val of H: Interval to point update (+,0)
+	Val of P: Interval to point update (+,0)
+	Der of I: Interval to point update (pos,zero)
+	Der of O: Interval to point update (neg,zero)
+	Der of V: Interval to point update (neg,zero)
+	Der of H: Interval to point update (neg,zero)
+	Der of P: Interval to point update (neg,zero)
+
+Transition 42->7
+	Val of O: Interval to point update (+,0)
+	Val of V: Interval to point update (+,0)
+	Val of H: Interval to point update (+,0)
+	Val of P: Interval to point update (+,0)
+	Der of O: Interval to point update (neg,zero)
+	Der of V: Interval to point update (neg,zero)
+	Der of H: Interval to point update (neg,zero)
+	Der of P: Interval to point update (neg,zero)
+
+Transition 42->20
+	Der of O: Interval to point update (neg,zero)
+	Der of V: Interval to point update (neg,zero)
+	Der of H: Interval to point update (neg,zero)
+	Der of P: Interval to point update (neg,zero)
+
+Transition 42->42
+	No changes
+
+Transition 42->44
+	Der of I: Point to interval update (zero,neg)
+
+Transition 43->13
+	Val of O: Point to interval update (0,+)
+	Val of V: Point to interval update (0,+)
+	Val of H: Point to interval update (0,+)
+	Val of P: Point to interval update (0,+)
+
+Transition 43->18
+	Val of O: Point to interval update (0,+)
+	Val of V: Point to interval update (0,+)
+	Val of H: Point to interval update (0,+)
+	Val of P: Point to interval update (0,+)
+	Der of I: Point to interval update (zero,neg)
+
+Transition 44->27
+	Val of I: Point to interval update (max,+)
+
+Transition 45->25
+	Val of I: Point to interval update (max,+)
+	Val of O: Point to interval update (0,+)
+	Val of V: Point to interval update (0,+)
+	Val of H: Point to interval update (0,+)
+	Val of P: Point to interval update (0,+)
+
+Transition 3->4
+	Der of I: Interval to point update (neg,zero)
+
+Transition 3->1
+	Val of I: Interval to point update (+,0)
+	Der of I: Interval to point update (neg,zero)
+
+Transition 4->4
+	No changes
+
+Transition 4->9
+	Der of O: Point to interval update (zero,pos)
+	Der of V: Point to interval update (zero,pos)
+	Der of H: Point to interval update (zero,pos)
+	Der of P: Point to interval update (zero,pos)
+
+Transition 5->7
+	Val of I: Interval to point update (+,max)
+	Der of I: Interval to point update (pos,zero)
+
+Transition 5->4
+	Der of I: Interval to point update (pos,zero)
+
+Transition 6->3
+	Val of I: Point to interval update (max,+)
+
+Transition 6->39
+	Val of I: Point to interval update (max,+)
+	Der of O: Point to interval update (zero,pos)
+	Der of V: Point to interval update (zero,pos)
+	Der of H: Point to interval update (zero,pos)
+	Der of P: Point to interval update (zero,pos)
+
+Transition 7->7
+	No changes
+
+Transition 7->43
+	Der of O: Point to interval update (zero,pos)
+	Der of V: Point to interval update (zero,pos)
+	Der of H: Point to interval update (zero,pos)
+	Der of P: Point to interval update (zero,pos)
+
+Transition 7->6
+	Der of I: Point to interval update (zero,neg)
+
+Transition 7->45
+	Der of I: Point to interval update (zero,neg)
+	Der of O: Point to interval update (zero,pos)
+	Der of V: Point to interval update (zero,pos)
+	Der of H: Point to interval update (zero,pos)
+	Der of P: Point to interval update (zero,pos)
+
