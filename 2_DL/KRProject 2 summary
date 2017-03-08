@@ -1,0 +1,20 @@
+CheesyVegetableTopping
+	we can delete it because it can be achieved with the use of CheesyTopping and VegetableTopping
+
+IceCream
+	Removed hasTopping some FruitTopping from definition of IceCream
+	Renamed PizzaTopping into Topping
+	Changed domain of hasTopping from Pizza to Food
+	Changed ranges of isToppingOf from Pizza to Food
+	Added element FruityIceCream equivalent to IceCream and (hasTopping some FruitTopping)
+
+Redundant Elements
+	SpicyPizzaEquivalent is equivalent to SpicyPizza, so it has been removed
+	VegetarianPizzaEquivalent2 is equivalent to VegetarianPizzaEquivalent1, so it has been removed
+	Vegetarian pizza is not equivalent to VegetarianPizzaEquivalent1, as a pizza with a new kind of topping would be considered a VegetarianPizza but not a VegetarianPizzaEquivalent1. We fixed it by removing VegetarianPizzaEquivalent1 and making VegetarianPizza equivalent to Pizza and (hasTopping only VegetarianTopping)
+	SlicedTomatoTopping and SundriedTomatoTopping are a subclass of (hasSpiciness some Mild), but it's inherited from TomatoTopping. We removed the subclass definition in order to remove the redundancy
+
+Added Redundancies
+	RedOnionTopping, added subclass of hasSpiciness some Medium, redundant with the declaration of the parent
+	Added HotPizza, equivalent to Pizza and (hasTopping some SpicyTopping), making it equivalent to SpicyPizza
+	Siciliana, added subclass of Food, obvious redundancy

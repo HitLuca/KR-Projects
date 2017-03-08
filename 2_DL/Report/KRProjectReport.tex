@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[parfill]{parskip}
+\usepackage{dsfont}
+\usepackage{graphicx}
+\usepackage{color}
+
+\newcommand{\vrbsome}{{\color{magenta}some }}
+\newcommand{\vrband}{{\color{cyan}and }}
+
+\begin{document}
+
+%\renewcommand{\qedsymbol}{\filledbox}
+\title{\includegraphics[scale=1.3]{./UvA-logo.jpg}\\ Analysis of a description logic ontology}
+\author{
+Simonetto Luca - 11413522\\
+Ruben Blom - 10684980\\
+\begin{normalsize}
+Knowledge Representation
+\end{normalsize}}
+ 
+\maketitle
+
+\textbf{Task 1:} \textit{find which classes are inconsistent, find ways to resolve the inconsistency, implement them in the Protege editor}
+
+For this and the following tasks the reasoner used was FaCT++.
+
+After loading the pizza.owl ontology in the Protege editor and starting the reasoner, we discovered two separate inconsistencies, so we took two separate approached to resolve them.
+
+\textsc{CheesyVegetableTopping}
+\begin{itemize}
+\item{\underline{Problem}: \texttt{CheesyVegetableTopping} is subclass of \texttt{CheeseTopping} and \texttt{VegetableTopping}, thus creating a conflict as the two superclasses are disjoint.} 
+
+\item{\underline{Analysis}: in essence, there is not a topping that is at the same time a kind of cheese and a vegetable, so a possible solution could be to simply delete it. A food with
+
+\texttt{hasTopping \vrbsome CheesyVegetableTopping} would be written as 
+
+\texttt{(hasTopping \vrbsome CheesyTopping) \vrband (hasTopping \vrbsome VegetableTopping)}
+
+We assume that no topping can be a cheese and a vegetable at the same time.}
+
+\item{\underline{Solution}: remove the class \texttt{CheesyVegetableTopping}.}
+\end{itemize}
+
+\textsc{IceCream}
+\begin{itemize}
+\item{\underline{Problem}: The \texttt{IceCream} class has as subclass \texttt{hasTopping \vrbsome FruitTopping} and the propriety \texttt{hasTopping} has only \texttt{Pizza} domain. This conflict requires a more elaborated solution.}
+
+\item{\underline{Analysis}: We have encountered a number of different subproblems, as the propriety \texttt{hasTopping} has an incompatible domain and the \texttt{PizzaTopping} class has now a wrong meaning (too restrictive).}
+
+\item{\underline{Solution}: we first need to solve the \texttt{hasTopping} problem, giving the domain Food. Then we also have to fix the reverse propriety \texttt{isToppingOf}, as the \texttt{Range} propriety has also to range on \texttt{Food}. The next step we have done is to remove the propriety \texttt{hasTopping \vrbsome FruitTopping} from \texttt{IceCream} (in order to make it similar to the \texttt{Pizza} class) and adding the subclass \texttt{FruityIceCream}, which is equivalent to \texttt{IceCream \vrband (hasTopping some FruitTopping)}. Now, as \texttt{FruityIceCream} would have a \texttt{PizzaTopping}, we renamed \texttt{PizzaTopping} to \texttt{Topping}.}
+\end{itemize}
+
+\textbf{Task 2:} \textit{find if there are places where the pizza.owl ontology contains redundant statements. If you find any, report them and explain why they are redundant.}
+
+While searching through the whole ontology we discovered two types of redundancies: equivalent classes and unnecessary subclass declarations.
+
+\begin{itemize}
+\item{\underline{\texttt{SpicyPizzaEquivalent $\equiv$ SpicyPizza}}: the first is equivalent to \texttt{Pizza \vrband (hasTopping \vrbsome (PizzaTopping \vrband (hasSpiciness \vrbsome Hot)))} while the second is equivalent to \texttt{Pizza \vrband (hasTopping \vrbsome SpicyTopping)}. The two declarations are in fact equivalent as we can see from the \texttt{SpicyTopping} definition.}
+
+\item{\underline{\texttt{VegetarianPizzaEquivalent2 $\equiv$ VegetarianPizzaEquivalent1}}: we can easily spot it as the range of available toppings of \texttt{VegetarianPizzaEquivalent2} is in fact the definition of the available toppings for \texttt{VegetarianPizzaEquivalent1}. [Sidenote] we also fixed the class \texttt{VegetarianPizza}, as we think that removing meat and fish from the possible toppings would leave a new kind of topping to be part of a \texttt{VegetarianPizza}. In the case that a new kind of topping is introduced, if it is considered vegetarian it will have to be inserted in the list of vegetarian toppings.}
+
+\item{\underline{\texttt{SlicedTomatoTopping} and \texttt{SundriedTomatoTopping} subclasses}: in this case we can see that the declaration \texttt{SubClass Of} of the two classes is an unnecessary repetition. The value \texttt{hasSpiciness \vrbsome Mild} is also declared on the \texttt{TomatoTopping} superclass, so it can be removed.}
+\end{itemize}
+
+\textbf{Task 3:} \textit{Extend the ontology with some obvious redundant statements.}
+
+We added three redundancies in the ontology, explained below
+
+\begin{itemize}
+\item{In the class \texttt{RedOnionTopping} we have added the subclass \texttt{hasSpiciness \vrbsome Medium}, that is redundant with the declaration of the parent class.}
+\item{We added the class \texttt{HotPizza}, equivalent to \texttt{Pizza \vrband (hasTopping some SpicyTopping)}, making it equivalent to \texttt{SpicyPizza}.}
+\item{For the pizza \texttt{Siciliana} we added the propriety \texttt{SubClass Of Food}, that is useless as it is already a child class of it.}
+\end{itemize}
+
+\end{document}
